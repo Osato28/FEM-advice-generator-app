@@ -1,0 +1,28 @@
+{
+  "name": "fem-advice-generator-app",
+  "version": "1.0.0",
+  "description": "Submission to \"Advice generator app\" challenge from frontendmentor.io",
+  "main": "dist/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx postcss src/*.css -o dist/styles.css",
+    "watch": "watch 'npm run build:css' ./src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Osato28/FEM-advice-generator-app.git"
+  },
+  "author": "Osato28",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Osato28/FEM-advice-generator-app/issues"
+  },
+  "homepage": "https://github.com/Osato28/FEM-advice-generator-app#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "tailwindcss": "^3.0.24",
+    "watch": "^1.0.2"
+  }
+}
