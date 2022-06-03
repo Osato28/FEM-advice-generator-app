@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <title aria-label="Advice generator">Frontend Mentor | Advice generator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400,500,600,700,800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js" defer></script>
+<body>
+  <div id="componentWrapper" class="component-wrapper">
+    <!-- Template's contents go here -->
+    <!-- .component-wrapper takes up all available space and has position:relative so that the component centers on it -->
+  </div>
+
+  <noscript>
+    <div class="advice container centered">
+      <div class="noscript-warning">
+        This page cannot work properly without JavaScript. 
+        <br><br>
+        Enable scripts for this page if you want to see it in action.
+      </div>
+    </div>
+  </noscript>
+
+  <template id="adviceTemplate">
+    <div class="advice container centered">
+      <p class="id"><span label=""></span>ADVICE #<span id="adviceID">...</span></p>
+      
+      <p class="text">"<span id="adviceText" tabindex="0">Loading...</span>"</p>
+  
+      <img class="divider-mobile" src="./assets/pattern-divider-mobile.svg" aria-hidden="true">
+      <img class="divider-desktop" src="./assets/pattern-divider-desktop.svg" aria-hidden="true">
+  
+      <div class="btn reroll" id="rerollButton" role="button" tabindex="0">
+        <img class="img-dice" src="./assets/icon-dice.svg" alt="Get another advice">
+      </div>
+    </div>
+  </template>
+</body>
+</html>

@@ -99,3 +99,11 @@
         }
     }
 }
+
+
+// Styling for noscript
+noscript > .advice {
+    color: var(--adv-text-clr);
+    font-size: var(--adv-text-fs);
+    padding: var(--adv-text-fs);
+}
