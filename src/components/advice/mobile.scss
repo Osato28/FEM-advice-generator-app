@@ -15,8 +15,7 @@
     padding: 45px 22px 64px 22px;
 
     &.container {
-        min-width: var(--adv-cont-minw);
-        max-width: var(--adv-cont-maxw);
+        width: var(--adv-cont-w);
         border-radius: var(--adv-cont-bradius);
     }
 
@@ -65,7 +64,7 @@
     }
 
     .btn {
-        background-color: var(--adv-btn-bgclr);
+        background-color: var(--adv-btn-inactive-bgclr);
         width: var(--adv-btn-w);
         height: var(--adv-btn-w);
         border-radius: 100px;
@@ -93,7 +92,11 @@
             margin: auto;
         }
 
-        &:hover, &:focus {
+        &.active {
+            background-color: var(--adv-btn-bgclr);
+        }
+
+        &.active:hover, &.active:focus {
             outline: none;
             box-shadow: 0px 0px 20px 3px var(--adv-btn-bgclr);
         }

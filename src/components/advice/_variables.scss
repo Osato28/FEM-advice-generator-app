@@ -12,9 +12,9 @@
     --adv-text-clr: #{$clr-primary};
     --adv-btn-bgclr: #{$clr-accent};
     --adv-btn-imgclr: #{$clr-bg};
+    --adv-btn-inactive-bgclr: #{$clr-btn-inactive};
 
-    --adv-cont-minw: 280px;
-    --adv-cont-maxw: 350px;
+    --adv-cont-w: 93%;
     --adv-cont-bradius: 8px;
 
     --adv-id-fs: 12px;
@@ -25,11 +25,17 @@
     --adv-btn-img-w: 24px;
 }
 
+// Most tablets
+@media (min-width: 512px) {
+    :root {
+        --adv-cont-w: 54%;
+    }
+}
+
 // 1366, 1440px
 @media (min-width: 1024px) {
     :root {
-        --adv-cont-minw: 400px;
-        --adv-cont-maxw: 577px;
+        --adv-cont-w: 37%;
         --adv-cont-bradius: 20px;
 
         --adv-id-fs: 14px;
