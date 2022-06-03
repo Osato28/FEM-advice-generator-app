@@ -1,0 +1,11 @@
+@import 'variables';
+
+:root {
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #{$clr-bg};
+    /* Fallback text color */
+    color: #fff;
+}

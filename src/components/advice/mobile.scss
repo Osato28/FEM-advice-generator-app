@@ -1,0 +1,100 @@
+/* CSS layout for the mobile version */
+/* Defines general logic of the layout; most media-related changes are linked to variables in localvars.css */
+
+
+// Styling for div.advice as an element
+
+.advice {
+    background-color: var(--adv-cont-bgclr);
+
+    &.container {
+        min-width: var(--adv-cont-minw);
+        max-width: var(--adv-cont-maxw);
+        border-radius: var(--adv-cont-bradius);
+    }
+
+    &.centered {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+    padding: 45px 22px 64px 22px;
+}
+
+// Styling for .advice's children
+
+.advice {
+    .divider-desktop {
+        display: none;
+    }
+
+    .divider-mobile {
+        display: block;
+        width: 100%;
+    }
+
+    .id {
+        color: var(--adv-id-clr);
+        font-size: var(--adv-id-fs);
+        font-weight: 400;
+
+        letter-spacing: 0.2em;
+
+        // Make text slightly squashed
+        width: fit-content;
+        transform: scaleY(0.9);
+    }
+
+    .text {
+        color: var(--adv-text-clr);
+        font-size: var(--adv-text-fs);
+        font-weight: 500;
+        text-align: center;
+
+        letter-spacing: 0.05em;
+
+        margin: 35px 5px 30px 5px;
+    }
+
+    .btn {
+        background-color: var(--adv-btn-bgclr);
+        width: var(--adv-btn-w);
+        height: var(--adv-btn-w);
+        border-radius: 100px;
+
+        // Position at the bottom-middle
+        position: absolute;
+        bottom: 0%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        
+        // Center image inside
+        display: flex;
+        align-items: center;
+        justify-items: center;
+
+
+        .img-dice {
+            display: block;
+            width: var(--adv-btn-img-w);
+
+            // Currently the SVG has a fixed color equal to $clr-bg, but it can be changed to fill="currentColor" later
+            color: var(--adv-btn-imgclr);
+
+            // Necessary to center the element properly
+            margin: auto;
+        }
+
+        &:hover, &:focus {
+            outline: none;
+            box-shadow: 0px 0px 20px 3px var(--adv-btn-bgclr);
+        }
+    }
+}

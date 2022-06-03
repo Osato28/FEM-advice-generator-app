@@ -1,0 +1,22 @@
+/* ALL colors in a component use local variables */
+/* Local variables can get values from base, but the component should be portable */
+
+/* This file is for local variables that change based on media queries */
+/* For logic that changes on media queries, see mobile and desktop files */
+
+@import '../../base/variables';
+
+:root {
+    --adv-cont-minw: 93%;
+    --adv-cont-maxw: 93%;
+    --adv-cont-bradius: 8px;
+    --adv-cont-bgclr: #{$clr-backdrop};
+    --adv-id-clr: #{$clr-accent};
+    --adv-id-fs: 12px;
+    --adv-text-clr: #{$clr-primary};
+    --adv-text-fs: 22px;
+    --adv-btn-bgclr: #{$clr-accent};
+    --adv-btn-imgclr: #{$clr-bg};
+    --adv-btn-w: 64px;
+    --adv-btn-img-w: 24px;
+}
