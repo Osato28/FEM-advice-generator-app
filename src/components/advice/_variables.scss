@@ -7,16 +7,32 @@
 @import '../../base/variables';
 
 :root {
-    --adv-cont-minw: 93%;
-    --adv-cont-maxw: 93%;
-    --adv-cont-bradius: 8px;
     --adv-cont-bgclr: #{$clr-backdrop};
     --adv-id-clr: #{$clr-accent};
-    --adv-id-fs: 12px;
     --adv-text-clr: #{$clr-primary};
-    --adv-text-fs: 22px;
     --adv-btn-bgclr: #{$clr-accent};
     --adv-btn-imgclr: #{$clr-bg};
+
+    --adv-cont-minw: 280px;
+    --adv-cont-maxw: 350px;
+    --adv-cont-bradius: 8px;
+
+    --adv-id-fs: 12px;
+    --adv-text-fs: 22px;
+    --adv-text-lh: 1.3em;
+
     --adv-btn-w: 64px;
     --adv-btn-img-w: 24px;
+}
+
+// 1366, 1440px
+@media (min-width: 1200px) {
+    :root {
+        --adv-cont-minw: 400px;
+        --adv-cont-maxw: 577px;
+        --adv-cont-bradius: 20px;
+
+        --adv-id-fs: 14px;
+        --adv-text-fs: 26px;
+    }
 }

@@ -1,2 +1,17 @@
 /* CSS layout for the dark version */
 /* Defines general logic; variables are controlled by localvars.css */
+
+.advice {
+    padding: 51px 54px 75px 54px;
+}
+
+.advice {
+    .divider-desktop {
+        display: block;
+        width: 100%;
+    }
+
+    .divider-mobile {
+        display: none;
+    }
+}
