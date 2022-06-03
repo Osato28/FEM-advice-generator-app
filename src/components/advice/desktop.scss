@@ -1,17 +1,19 @@
 /* CSS layout for the dark version */
-/* Defines general logic; variables are controlled by localvars.css */
+/* Defines general logic; font size and other such variables are controlled by _variables.scss */
 
-.advice {
-    padding: 51px 54px 75px 54px;
-}
-
-.advice {
-    .divider-desktop {
-        display: block;
-        width: 100%;
+@media (min-width: 1024px) {
+    .advice {
+        padding: 51px 54px 75px 54px;
     }
-
-    .divider-mobile {
-        display: none;
+    
+    .advice {
+        .divider-desktop {
+            display: block;
+            width: 100%;
+        }
+    
+        .divider-mobile {
+            display: none;
+        }
     }
 }
